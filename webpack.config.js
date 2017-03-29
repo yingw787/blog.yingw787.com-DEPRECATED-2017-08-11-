@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -19,9 +20,9 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                use: 'babel-loader',
+                loader: 'babel-loader',
                 exclude: path.resolve('node_modules'),
-                query: {
+                options: {
                     presets: ['react', 'env', 'stage-0']
                 }
 
@@ -40,5 +41,10 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'src/index.html'
+        })
+    ]
 }
