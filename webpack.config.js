@@ -25,7 +25,6 @@ module.exports = {
                 options: {
                     presets: ['react', 'env', 'stage-0']
                 }
-
             },
             {
                 test: /\.(css)$/,

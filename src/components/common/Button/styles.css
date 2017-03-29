@@ -1,6 +1,6 @@
-.button {
-    width: 100px;
-    height: 40px;
-    color: red;
-    background-color: green;
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
