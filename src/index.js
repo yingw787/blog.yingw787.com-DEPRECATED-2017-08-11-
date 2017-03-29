@@ -10,5 +10,5 @@ ReactDOM.render(
         <Route path="/" component={App}>
         </Route>
     </Router>
-    , document.querySelector('.container')
+    , document.querySelector('.yingw787-container')
 );
