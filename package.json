@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "blog - yingw787",
   "main": "index.js",
+  "repository": "https://github.com/yingw787/blog.yingw787.com",
   "scripts": {
     "clean": "rimraf dist",
     "dev": "webpack-dev-server",
-    "build": "npm run clean && webpack -p"
+    "build": "npm run clean && webpack -p",
+    "build-dev": "npm run clean && webpack --display-error-details"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +17,8 @@
     "react-dom": "^15.4.2",
     "react-router": "^4.0.0",
     "tawian-frontend": "^2.0.0",
-    "typeface-cousine": "0.0.22"
+    "typeface-cousine": "0.0.22",
+    "typeface-space-mono": "0.0.22"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -25,6 +28,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "css-loader": "^0.27.3",
     "html-webpack-plugin": "^2.28.0",
+    "rimraf": "^2.6.1",
     "style-loader": "^0.16.1",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
