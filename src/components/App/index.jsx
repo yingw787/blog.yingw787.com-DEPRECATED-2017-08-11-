@@ -4,7 +4,9 @@ import Button from '../common/Button';
 export default class App extends Component {
     render() {
         return (
-            <Button />
+            <Button
+                type='default'
+                isGhost={false}/>
         );
     }
 }
