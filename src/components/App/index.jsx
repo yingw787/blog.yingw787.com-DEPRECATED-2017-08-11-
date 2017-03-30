@@ -1,17 +1,31 @@
 import React, { Component } from 'react';
-import Button from '../common/Button';
+import AppBar from '../common/AppBar';
 
-const handleClickFunction = () => {
-    console.log('clicked!');
-}
+// const handleClickFunction = () => {
+//     console.log('clicked!');
+// }
+
+const links = [
+    {
+        'href': 'https://google.com',
+        'text': 'google'
+    },
+    {
+        'href': 'https://linkedin.com',
+        'text': 'linkedin'
+    }
+];
 
 export default class App extends Component {
     render() {
         return (
-            <Button
-                type='default'
-                isGhost={false}
-                handleClickFunction={handleClickFunction}/>
+            <AppBar
+                siteTitle="yingw787"
+                links={links}/>
+            // <Button
+            //     type='default'
+            //     isGhost={false}
+            //     handleClickFunction={handleClickFunction}/>
         );
     }
 }
