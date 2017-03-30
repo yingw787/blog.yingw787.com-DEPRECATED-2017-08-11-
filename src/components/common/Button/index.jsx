@@ -19,6 +19,7 @@ export default class Button extends Component {
     constructor(props) {
         super(props);
         this.generateButtonClasses = this.generateButtonClasses.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     generateButtonClasses() {
@@ -36,7 +37,7 @@ export default class Button extends Component {
     }
 
     handleClick() {
-        console.log('clicked!');
+        this.props.handleClickFunction();
     }
 
     render() {
@@ -54,4 +55,5 @@ export default class Button extends Component {
 Button.propTypes = {
     type: PropTypes.string.isRequired,
     isGhost: PropTypes.bool.isRequired,
+    handleClickFunction: PropTypes.func.isRequired,
 };
