@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
+import _ from 'lodash';
+
 import AppBar from '../common/AppBar';
+import Post from '../common/Post';
 
 const links = [
     {
@@ -13,6 +16,12 @@ const links = [
 ];
 
 export default class PostsViewer extends Component {
+    constructor(props) {
+        super(props);
+    }
+    renderPosts(arrayOfPostLinks) {
+
+    }
     render() {
         return (
             <div className='container'>

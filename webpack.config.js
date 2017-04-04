@@ -3,9 +3,12 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: {
-        bundle: './src/index.js'
-    },
+    entry: [
+        'es6-shim',
+        'babel-polyfill',
+        'isomorphic-fetch',
+        './src/index.js'
+    ],
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js'

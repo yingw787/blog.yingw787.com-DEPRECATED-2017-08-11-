@@ -19,7 +19,6 @@ export default class AppBar extends Component {
     }
 
     render() {
-        const siteNavClassNames = "site-nav nav-separated "
         return (
             <header className="site-header dashed-bottom">
                 <a className="site-title" href="#">{this.props.siteTitle}</a>
