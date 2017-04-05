@@ -5,11 +5,14 @@ import PostsViewer from '../PostsViewer';
 //     console.log('clicked!');
 // }
 
+import { regularPosts } from 'config/posts';
+
 
 export default class App extends Component {
     render() {
         return (
-            <PostsViewer />
+            <PostsViewer
+                posts={regularPosts}/>
             // <Button
             //     type='default'
             //     isGhost={false}

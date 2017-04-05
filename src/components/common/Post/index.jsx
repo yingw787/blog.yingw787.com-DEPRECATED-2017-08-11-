@@ -21,7 +21,7 @@ export default class Post extends Component {
 
     componentDidMount() {
         let self = this;
-        axios.get('posts/EXAMPLE.md')
+        axios.get(this.props.fileLink)
             .then(response => {
                 const text = HtmlToReactParser.parse(md.render(response.data));
                 self.setState({
@@ -44,5 +44,5 @@ export default class Post extends Component {
 }
 
 Post.propTypes = {
-    fileLink: PropTypes.string // make PropTypes.string.isRequired
+    fileLink: PropTypes.string.isRequired
 }
