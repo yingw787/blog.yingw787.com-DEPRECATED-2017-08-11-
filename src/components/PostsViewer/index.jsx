@@ -3,17 +3,18 @@ import _ from 'lodash';
 
 import AppBar from '../common/AppBar';
 import Post from '../common/Post';
+import { links } from 'config/links';
 
-const links = [
-    {
-        'href': 'https://google.com',
-        'text': 'home'
-    },
-    {
-        'href': 'https://linkedin.com',
-        'text': 'submit'
-    }
-];
+// const links = [
+//     {
+//         'href': 'https://google.com',
+//         'text': 'home'
+//     },
+//     {
+//         'href': 'https://linkedin.com',
+//         'text': 'submit'
+//     }
+// ];
 
 export default class PostsViewer extends Component {
     constructor(props) {

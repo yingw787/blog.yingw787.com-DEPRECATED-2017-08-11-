@@ -14,7 +14,8 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
-            'posts': path.resolve('./posts')
+            'posts': path.resolve('./posts'),
+            'config': path.resolve('./config')
         }
     },
     module: {
@@ -34,7 +35,7 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
+                            // modules: true, // causes conflict with global namespaced css frameworks.
                             localIndentName: '[name]__[local]__[hash:base64:5]'
                         }
                     }
@@ -42,13 +43,21 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|eot|svg)$/,
-                loader: 'file-loader'
+                loader: 'file-loader',
+            },
+            {
+                test: /\.(ico)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/index.html'
+            template: 'src/index.html',
+            favicon: 'src/favicon.ico'
         })
     ]
 }

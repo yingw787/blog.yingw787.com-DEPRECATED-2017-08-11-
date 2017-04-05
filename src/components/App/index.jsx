@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Post from '../common/Post';
+import PostsViewer from '../PostsViewer';
 
 // const handleClickFunction = () => {
 //     console.log('clicked!');
@@ -9,7 +9,7 @@ import Post from '../common/Post';
 export default class App extends Component {
     render() {
         return (
-            <Post />
+            <PostsViewer />
             // <Button
             //     type='default'
             //     isGhost={false}

@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute } from 'react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 import 'tawian-frontend';
 import 'typeface-cousine';
+import 'prismjs/themes/prism-dark.css';
 
 import App from './components/App';
 
@@ -12,5 +13,5 @@ ReactDOM.render(
         <Route path="/" component={App}>
         </Route>
     </Router>
-    , document.querySelector('.app-container')
+    , document.querySelector('.yingw787-container')
 );
