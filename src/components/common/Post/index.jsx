@@ -1,13 +1,14 @@
 import React, { Component, PropTypes } from 'react';
 import { Parser } from 'html-to-react';
 import MarkdownParser from 'markdown-it';
-import toString from 'stream-to-string';
+import prism from 'markdown-it-prism';
 import axios from 'axios';
 
-// import exampleMarkdownFilePath from 'posts/EXAMPLE.md';
+import styles from './styles.css';
 
 const HtmlToReactParser = new Parser();
 const md = new MarkdownParser();
+md.use(prism);
 
 export default class Post extends Component {
     constructor(props) {
@@ -20,9 +21,8 @@ export default class Post extends Component {
 
     componentDidMount() {
         let self = this;
-        axios.get('../../../posts/EXAMPLE.md')
+        axios.get('posts/EXAMPLE.md')
             .then(response => {
-                debugger;
                 const text = HtmlToReactParser.parse(md.render(response.data));
                 self.setState({
                     loading: false,

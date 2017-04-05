@@ -5,8 +5,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: [
         'es6-shim',
-        'babel-polyfill',
-        'isomorphic-fetch',
         './src/index.js'
     ],
     output: {
@@ -16,7 +14,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
-            'posts': path.resolve('posts')
+            'posts': path.resolve('./posts')
         }
     },
     module: {
@@ -41,6 +39,10 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(woff|woff2|eot|svg)$/,
+                loader: 'file-loader'
             }
         ]
     },
