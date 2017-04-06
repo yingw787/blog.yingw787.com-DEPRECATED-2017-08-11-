@@ -5,6 +5,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import 'tawian-frontend';
 import 'typeface-cousine';
 import 'prismjs/themes/prism-dark.css';
+import 'katex/dist/katex.min.css';
 
 import App from './components/App';
 

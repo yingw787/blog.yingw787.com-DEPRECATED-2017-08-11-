@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react';
 import { Parser } from 'html-to-react';
 import MarkdownParser from 'markdown-it';
 import prism from 'markdown-it-prism';
+import mk from 'markdown-it-katex';
+import markdownItMermaid from 'markdown-it-mermaid';
 import axios from 'axios';
 
 import styles from './styles.css';
@@ -9,6 +11,8 @@ import styles from './styles.css';
 const HtmlToReactParser = new Parser();
 const md = new MarkdownParser();
 md.use(prism);
+md.use(mk);
+md.use(markdownItMermaid);
 
 export default class Post extends Component {
     constructor(props) {

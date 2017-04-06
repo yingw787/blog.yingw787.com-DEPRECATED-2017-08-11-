@@ -1,5 +1,5 @@
 const regularPosts = [
-    'posts/EXAMPLE.md'
+    'posts/first_post.md'
 ];
 
 export { regularPosts };

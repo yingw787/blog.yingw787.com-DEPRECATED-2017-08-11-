@@ -5,6 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: [
         'es6-shim',
+        'babel-polyfill',
         './src/index.js'
     ],
     output: {
@@ -42,7 +43,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff|woff2|eot|svg)$/,
+                test: /\.(woff|woff2|eot|svg|ttf)$/,
                 loader: 'file-loader',
             },
             {
