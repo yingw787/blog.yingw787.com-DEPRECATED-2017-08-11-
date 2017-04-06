@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "webpack-dev-server",
-    "build": "npm run clean && webpack -p",
+    "build": "NODE_ENV='production' npm run clean && webpack -p",
     "build-dev": "npm run clean && webpack --display-error-details"
   },
   "author": "",
@@ -36,6 +36,7 @@
     "babel-core": "6.24.0",
     "babel-loader": "6.4.1",
     "babel-preset-env": "1.2.2",
+    "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "6.23.0",
     "babel-preset-stage-0": "6.22.0",
     "css-loader": "0.27.3",
