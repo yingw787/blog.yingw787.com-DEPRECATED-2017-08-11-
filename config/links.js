@@ -1,6 +1,6 @@
 const links = [
     {
-        'href': 'https://linkedin.com',
+        'href': '/submit',
         'text': 'submit'
     }
 ];

@@ -28,6 +28,7 @@
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-router": "4.0.0",
+    "react-router-dom": "^4.0.0",
     "tawian-frontend": "2.0.0",
     "typeface-cousine": "0.0.22"
   },

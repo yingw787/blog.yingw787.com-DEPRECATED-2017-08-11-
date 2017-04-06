@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router-dom';
 import _ from 'lodash';
 
 export default class AppBar extends Component {
@@ -11,7 +12,7 @@ export default class AppBar extends Component {
         const arrayOfLinks = _.map(this.props.links, function(link) {
             return (
                 <li key={link.text}>
-                    <a href={link.href}>{link.text}</a>
+                    <Link to={link.href}>{link.text}</Link>
                 </li>
             );
         });
@@ -21,7 +22,7 @@ export default class AppBar extends Component {
     render() {
         return (
             <header className="site-header dashed-bottom">
-                <a className="site-title" href="#">{this.props.siteTitle}</a>
+                <Link to="/" className="site-title">{this.props.siteTitle}</Link>
                 <nav className="site-nav nav-separated" style={{'flex': 'none'}}>
                     <ul>
                         {this.generateLinks()}
