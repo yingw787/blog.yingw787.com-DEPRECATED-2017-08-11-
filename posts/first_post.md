@@ -6,10 +6,6 @@
 print "Hello World!"
 ```
 
-$$
-    \sqrt{4} = 2
-$$
-
 This is my first blog post on my new handcrafted blog.
 
 I thought about going with a static website generator such as Hugo or Jekyll, but after using them in the past I never felt like I had true ownership of what I could or could not do. Hand-crafting a single-page application was better because I knew each and every part of my stack, and I could swap out dependencies more easily.
@@ -18,15 +14,14 @@ Current capabilities (4-5-2017):
 - Support for:
     - Markdown!! (via markdown-it)
     - Syntax highlighting for code blocks (via markdown-it-prism)
-    - TeX support via KaTeX (via markdown-it-katex)
     - Images (via file-loader and webpack)
     - File upload and fetching (via axios)
     - Basic routing (via react-router)
 
 Remaining TODOs:
 - Add in working support (no console errors) for:
-    - UML diagrams or equivalent (take a look at markdown-it-mermaid or js-sequence-diagrams, former is included within package.json)
-    - TeX support (I hope I don't need to make my own parser, or fork the one I'm using...)
+    - UML diagrams or equivalent via markdown-it-mermaid or js-sequence-diagrams
+    - TeX support w/ KaTeX via markdown-it-katex
     - Disqus comment forums or equivalent
     - Google Analytics integrations and SEO optimization
 - Generate easily usable deployment pipeline with npm or bash scripts
