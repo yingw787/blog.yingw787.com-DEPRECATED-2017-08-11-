@@ -3,8 +3,10 @@ import { Parser } from 'html-to-react';
 import MarkdownParser from 'markdown-it';
 import prism from 'markdown-it-prism';
 
-// TODO: markdown-it-katex and markdown-it-parser likely have ES6 arrow functions that break the production build. Need to resolve these before uncommenting the line below.
+// TODO: markdown-it-mermaid has ES6 arrow functions that break the production build. Need to resolve this before uncommenting the markdown-it-mermaid import below.
 // This is because node_modules folder is ignored by babel-loader, and when the packages are imported, the fat arrow functions are written directly to the bundle.js file, which means when UglifyJS was running, it failed to parse and threw an exception.
+
+// TODO: markdown-it-katex creates unsupported props in React; figure out a way to disable these when importing this and chaining it to the markdown-it parser.
 
 // import mk from 'markdown-it-katex';
 // import markdownItMermaid from 'markdown-it-mermaid';
