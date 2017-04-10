@@ -32,4 +32,4 @@ Remaining TODOs:
 - Serverless authentication (not sure if it's an oxymoron)
 - Linting. So much linting.
 
-So, plenty of work to do. Guess we shall see what happens.
+I'll write a brief architectural overview of this application after getting it deployed. Excited to see where this goes.

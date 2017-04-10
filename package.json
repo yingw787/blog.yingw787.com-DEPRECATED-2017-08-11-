@@ -9,7 +9,8 @@
     "reset_nm": "rimraf node_modules && npm install",
     "dev": "webpack-dev-server",
     "build": "NODE_ENV='production' npm run clean && webpack -p",
-    "build-dev": "npm run clean && webpack --display-error-details"
+    "build-dev": "npm run clean && webpack --display-error-details",
+    "deploy": "npm run build && chmod +x s3_deploy.sh && ./s3_deploy.sh"
   },
   "author": "",
   "license": "ISC",
