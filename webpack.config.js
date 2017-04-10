@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -59,6 +60,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'src/index.html',
             favicon: 'src/favicon.ico'
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve('posts'),
+                to: path.resolve('dist/posts')
+            }
+        ])
     ]
 }
