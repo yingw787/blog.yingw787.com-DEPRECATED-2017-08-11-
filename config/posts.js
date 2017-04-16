@@ -1,4 +1,5 @@
 const regularPosts = [
+    'posts/biking.md',
     'posts/first_post.md'
 ];
 
