@@ -7,6 +7,9 @@ const regularPosts = [
 const navbarPosts = {
     'submit': {
         'link': 'posts/SUBMIT.md'
+    },
+    'tips': {
+        'link': 'posts/TIPS.md'
     }
 };
 
