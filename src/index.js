@@ -7,6 +7,7 @@ import 'typeface-cousine';
 import 'prismjs/themes/prism-dark.css';
 import 'katex/dist/katex.min.css';
 
+import './globals.css';
 import PostsViewer from './components/PostsViewer';
 
 import { regularPosts, navbarPosts } from 'config/posts';
