@@ -1,4 +1,5 @@
 const regularPosts = [
+    'posts/remaining_todos.md',
     'posts/donations.md',
     'posts/not_mongo.md',
     'posts/biking.md',
