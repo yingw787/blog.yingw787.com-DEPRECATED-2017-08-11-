@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "reset_nm": "rimraf node_modules && npm install",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --port 8000",
     "build": "NODE_ENV='production' npm run clean && webpack -p",
     "build-dev": "npm run clean && webpack --display-error-details",
     "deploy": "npm run build && chmod +x s3_deploy.sh && ./s3_deploy.sh"
