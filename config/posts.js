@@ -1,4 +1,5 @@
 const regularPosts = [
+    'posts/moving_to_hugo.md',
     'posts/common_pitfalls_in_software_development.md',
     'posts/five_months_in_2017.md',
     'posts/beginning_traveltile.md',
